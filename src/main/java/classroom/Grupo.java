@@ -18,7 +18,6 @@ public class Grupo {
 
     Grupo(int cantidadEstudiantes, Persona profesor, Asignatura asignatura, int codigo, String horario) {
         //this(cantidadEstudiantes, profesor, asignatura, codigo, horario);
-    	this.estudiantes = estudiantes;
         this.profesor = profesor;
         this.asignatura = asignatura;
         this.codigo = codigo;
