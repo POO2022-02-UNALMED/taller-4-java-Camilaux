@@ -1,9 +1,9 @@
 package classroom;
 
 public class Persona {
-	
-	private long cedula;
-    private String nombre;
+
+    long cedula;
+    String nombre;
     static int totalPersonas;
     
     static {
@@ -11,9 +11,9 @@ public class Persona {
     }
     
     Persona(){
-    	this.cedula = 0;
+    	cedula = 0;
     }
-
+    
     Persona(long cedula, String nombre) {
         this.cedula = cedula;
         this.nombre = nombre;
@@ -33,19 +33,15 @@ public class Persona {
     }
 
     Persona(String nombre) {
-        this.nombre = "";
         this.cedula = 1;
+		this.nombre = "";
         totalPersonas++;
     }
     
     long getCedula() {
         return cedula;
     }
-    
-    void setCedula(long cedula){
-    	this.cedula = cedula;
-    }
-    
+
     String getNombre() {
         return nombre;
     }
